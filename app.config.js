@@ -24,6 +24,7 @@ export default {
         foregroundImage: './assets/adaptive-icon.png',
         backgroundColor: '#F16653'
       },
+      package: "com.hack4equality.aware"
     },
     extra: {
       apiKey: process.env.API_KEY,

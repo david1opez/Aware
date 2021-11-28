@@ -14,7 +14,7 @@ const ButtonComponent = (props) => {
     const navigation = useNavigation();
 
     const buttonColor = props.color == "red" ? styles.redButton : styles.whiteButton;
-    const buttonStyle = props.style == "bold" ? styles.boldButton : styles.outlineButton;
+    const buttonStyle = props.style == "outline" ? styles.outlineButton : styles.boldButton;
     const textColor = props.color == "red" && props.style == "bold" ? styles.whiteText : props.color == "red" && props.style == "outline" ? styles.redText : props.color == "white" && props.style == "bold" ? styles.redText : styles.whiteText;
     const textSize = props.size == 1 ? styles.h1Text : props.size == 2 ? styles.h2Text : styles.h3Text; 
     
@@ -54,6 +54,13 @@ export default ButtonComponent
 const styles = StyleSheet.create({
     redButton: {
         backgroundColor: Colors.secondary,
+        paddingVertical: vs(5),
+        paddingBottom: vs(3),
+        paddingHorizontal: s(15),
+        marginBottom: vs(10),
+    },
+    whiteButton: {
+        backgroundColor: Colors.primary,
         paddingVertical: vs(5),
         paddingBottom: vs(3),
         paddingHorizontal: s(15),

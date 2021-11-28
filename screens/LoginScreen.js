@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
         marginBottom: s(70)
     },
     container: {
-        marginLeft: s(20),
         alignItems: 'center',
         justifyContent: 'center',
     },
